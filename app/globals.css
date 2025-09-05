@@ -122,8 +122,8 @@
 @theme {
   --color-primary-bg: #0a0a0a;
   --color-primary-gray: #101011;
-  --color-primary-orange: #ef9115;
-  --color-secondary-oragne: #cf7807;
+  --color-primary-btn: #ef9115;
+  --color-secondary-btn: #cf7807;
   --color-primary-foreground: #dde8e3;
   --color-secondary-foreground: #fafafa;
   --color-accent: #313131;

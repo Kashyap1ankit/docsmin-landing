@@ -3,6 +3,7 @@ import {
   Bricolage_Grotesque,
   Gupter,
   Anonymous_Pro,
+  Inter,
 } from "next/font/google";
 
 export const instrumental = Instrument_Serif({
@@ -22,5 +23,10 @@ export const gupter = Gupter({
 
 export const anonymouse = Anonymous_Pro({
   weight: ["400", "700"],
+  subsets: ["cyrillic"],
+});
+
+export const inter = Inter({
+  weight: ["500", "600", "700"],
   subsets: ["cyrillic"],
 });
