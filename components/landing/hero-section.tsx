@@ -79,7 +79,7 @@ export default function HeroSection() {
         </div>
 
         <div>
-          <Button className="p-6 rounded-[15px] border-4 border-[#2F2F30] bg-secondary-btn cursor-pointer group duration-500 inset-shadow-sm inset-shadow-white/50">
+          <Button className="p-6 rounded-[15px] border-4 border-[#2F2F30] bg-secondary-btn hover:bg-secondary-btn cursor-pointer group duration-500 inset-shadow-sm inset-shadow-white/50">
             <p className={`${inter.className} font-bold text-lg text-white`}>
               Get Started for Free
             </p>

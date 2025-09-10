@@ -1,3 +1,4 @@
+import Footer from "@/components/landing/footer";
 import HeroSection from "@/components/landing/hero-section";
 import NavigationBar from "@/components/landing/navigation-bar";
 import TrustedBy from "@/components/landing/trusted-by";
@@ -16,6 +17,7 @@ export default function Home() {
         <div className="flex flex-col gap-y-12">
           <HeroSection />
           <TrustedBy />
+          <Footer />
         </div>
       </div>
     </div>
