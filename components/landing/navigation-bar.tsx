@@ -64,7 +64,7 @@ export default function NavigationBar() {
 
       {/* Navigation Menu */}
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="gap-x-6">
           {/* Documentation */}
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent hover:bg-balck/20 active:bg-balck/20 cursor-pointer transition-colors duration-200">
@@ -74,38 +74,59 @@ export default function NavigationBar() {
                 Documentation
               </p>
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="bg-transparent backdrop-blur-md p-4 rounded-lg">
-              <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] h-full">
-                <li className="row-span-3">
+            <NavigationMenuContent className="bg-black/30 backdrop-blur-2xl p-4 rounded-lg">
+              <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] h-full ">
+                {/* <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
                       className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-linear-to-b p-6 no-underline outline-hidden select-none focus:shadow-md"
                       href="/"
                     >
                       <div className="mt-4 mb-2 text-lg font-medium">
-                        shadcn/ui
+                        Getting Started
                       </div>
                       <p className="text-muted-foreground text-sm leading-tight">
                         Beautifully designed components built with Tailwind CSS.
                       </p>
                     </a>
                   </NavigationMenuLink>
-                </li>
-                <ListItem href="/docs" title="Introduction">
-                  Re-usable components built using Radix UI and Tailwind CSS.
+                </li> */}
+
+                <ListItem
+                  href="/docs"
+                  title="Getting Started"
+                  className={`${inter.className}`}
+                >
+                  Deploy in minutes
                 </ListItem>
-                <ListItem href="/docs/installation" title="Installation">
-                  How to install dependencies and structure your app.
+
+                <ListItem
+                  href="/docs"
+                  title="Components"
+                  className={`${inter.className}`}
+                >
+                  Add interactive experience of docs
                 </ListItem>
-                <ListItem href="/docs/primitives/typography" title="Typography">
-                  Styles for headings, paragraphs, lists...etc
+                <ListItem
+                  href="/docs/installation"
+                  title="MarkDown"
+                  className={`${inter.className}`}
+                >
+                  Learn the format and syntax of markdown
+                </ListItem>
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Manual Installtion"
+                  className={`${inter.className}`}
+                >
+                  Setup docsmin for your own project
                 </ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           {/* Resources */}
-          <NavigationMenuItem>
+          {/* <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-transparent cursor-pointer hover:bg-balck/20 active:bg-balck/20 transition-colors duration-200">
               <p
                 className={`${inter.className} font-medium text-md text-primary-foreground`}
@@ -120,12 +141,28 @@ export default function NavigationBar() {
                     key={component.title}
                     title={component.title}
                     href={component.href}
+                    className={`${inter.className}`}
                   >
                     {component.description}
                   </ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
+          </NavigationMenuItem> */}
+
+          <NavigationMenuItem>
+            <NavigationMenuLink
+              asChild
+              className="bg-transparent hover:bg-primary/10 active:bg-primary/20 transition-colors duration-200"
+            >
+              <Link href="/blog">
+                <p
+                  className={`${inter.className} font-medium text-md text-primary-foreground`}
+                >
+                  Blog
+                </p>
+              </Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
 
           {/* Pricing */}
