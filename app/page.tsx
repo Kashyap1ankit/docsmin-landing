@@ -1,4 +1,5 @@
-import NavigationBar from "@/components/navigation-bar";
+import HeroSection from "@/components/landing/hero-section";
+import NavigationBar from "@/components/landing/navigation-bar";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     >
       <div className="bg-transparent px-4 py-2">
         <NavigationBar />
+        <HeroSection />
       </div>
     </div>
   );

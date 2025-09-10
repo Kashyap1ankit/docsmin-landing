@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Lenis root>
-        <body
-          className={`bg-primary-gray overflow-x-hidden max-w-9xl antialiased `}
-        >
+        <body className="bg-black overflow-x-hidden w-full max-w-[103rem] mx-auto antialiased">
           {children}
         </body>
       </Lenis>

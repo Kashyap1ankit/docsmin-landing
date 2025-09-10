@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { anonymouse, inter } from "@/lib/font";
 import { LuCircleArrowRight } from "react-icons/lu";
 import {
