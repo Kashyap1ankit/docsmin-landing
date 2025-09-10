@@ -1,10 +1,33 @@
+"use client";
+
 import { bricolag, inter } from "@/lib/font";
+import { motion } from "motion/react";
 
 const logoArray = ["mongodb", "chime", "clay", "docusign", "zapier", "ramp"];
 
 export default function TrustedBy() {
   return (
-    <div className="max-w-5xl mx-auto flex flex-col gap-y-16">
+    <motion.div
+      className="max-w-5xl mx-auto flex flex-col gap-y-16"
+      initial={{
+        y: 100,
+        filter: "blur(5px)",
+      }}
+      whileInView={{
+        y: 0,
+        filter: "blur(0px)",
+      }}
+      transition={{
+        duration: 1,
+
+        type: "spring",
+        damping: 10,
+        stiffness: 85,
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
       <div className="flex flex-col gap-y-4">
         <p
           className={`${bricolag.className} text-4xl text-muted-foreground font-bold  text-center`}
@@ -42,6 +65,6 @@ export default function TrustedBy() {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
