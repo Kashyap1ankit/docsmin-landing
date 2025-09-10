@@ -1,5 +1,6 @@
 import HeroSection from "@/components/landing/hero-section";
 import NavigationBar from "@/components/landing/navigation-bar";
+import TrustedBy from "@/components/landing/trusted-by";
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
     >
       <div className="bg-transparent px-4 ">
         <NavigationBar />
-        <HeroSection />
+        <div className="flex flex-col gap-y-12">
+          <HeroSection />
+          <TrustedBy />
+        </div>
       </div>
     </div>
   );
