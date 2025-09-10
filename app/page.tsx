@@ -10,7 +10,7 @@ export default function Home() {
       }}
       className="min-h-screen overflow-x-hidden"
     >
-      <div className="bg-transparent px-4 py-2">
+      <div className="bg-transparent px-4 ">
         <NavigationBar />
         <HeroSection />
       </div>

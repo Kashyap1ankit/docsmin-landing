@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { anonymouse, inter } from "@/lib/font";
+import { inter } from "@/lib/font";
 import { LuCircleArrowRight } from "react-icons/lu";
 import {
   NavigationMenu,
@@ -67,9 +67,9 @@ export default function NavigationBar() {
         <NavigationMenuList>
           {/* Documentation */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent hover:bg-primary/10 active:bg-primary/20 transition-colors duration-200">
+            <NavigationMenuTrigger className="bg-transparent hover:bg-balck/20 active:bg-balck/20 cursor-pointer transition-colors duration-200">
               <p
-                className={`${anonymouse.className} font-medium text-md text-primary-foreground`}
+                className={`${inter.className} font-medium text-md text-primary-foreground`}
               >
                 Documentation
               </p>
@@ -106,9 +106,9 @@ export default function NavigationBar() {
 
           {/* Resources */}
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-transparent hover:bg-primary/10 active:bg-primary/20 transition-colors duration-200">
+            <NavigationMenuTrigger className="bg-transparent cursor-pointer hover:bg-balck/20 active:bg-balck/20 transition-colors duration-200">
               <p
-                className={`${anonymouse.className} font-medium text-md text-primary-foreground`}
+                className={`${inter.className} font-medium text-md text-primary-foreground`}
               >
                 Resources
               </p>
@@ -136,7 +136,7 @@ export default function NavigationBar() {
             >
               <Link href="/pricing">
                 <p
-                  className={`${anonymouse.className} font-medium text-md text-primary-foreground`}
+                  className={`${inter.className} font-medium text-md text-primary-foreground`}
                 >
                   Pricing
                 </p>
@@ -152,7 +152,7 @@ export default function NavigationBar() {
             >
               <Link href="/testimonials">
                 <p
-                  className={`${anonymouse.className} font-medium text-md text-primary-foreground`}
+                  className={`${inter.className} font-medium text-md text-primary-foreground`}
                 >
                   Testimonials
                 </p>
@@ -164,7 +164,7 @@ export default function NavigationBar() {
 
       {/* CTA Button */}
       <div>
-        <Button className="p-6 rounded-[15px] border-4 border-[#2F2F30] bg-[#232324] cursor-pointer group duration-500">
+        <Button className="p-6 rounded-[15px] border-4 border-[#2F2F30] bg-[#232324] cursor-pointer group duration-500 inset-shadow-sm inset-shadow-white/20">
           <p
             className={`${inter.className} font-bold text-lg text-primary-foreground`}
           >

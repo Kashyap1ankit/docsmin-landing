@@ -148,4 +148,14 @@
   --color-chart5: #2dd4bc;
   --color-sidebar: #121212;
   --color-sidebar-foreground: #898989;
+  --animate-shine: shine 5s linear infinite;
+
+  @keyframes shine {
+    0% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: -100%;
+    }
+  }
 }
