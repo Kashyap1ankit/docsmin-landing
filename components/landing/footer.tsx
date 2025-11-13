@@ -2,7 +2,7 @@
 
 import type { ComponentProps, ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 import { anonymouse, bricolag, inter } from "@/lib/font";
 
 const footerLinks = [
