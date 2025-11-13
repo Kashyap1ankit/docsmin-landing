@@ -53,11 +53,11 @@ export default function HeroSection() {
           }}
         >
           <span
-            className={`${inter.className} text-white/80 text-6xl font-bold`}
+            className={`${inter.className} text-white/80 text-6xl font-bold leading-20`}
           >
-            Documentation&nbsp;
-            <span className="inline-flex items-center gap-2">
-              Done
+            Video Sharing&nbsp;
+            <span className="inline-flex items-start gap-2">
+              Becomes
               <span className={`${instrumental.className} text-primary-btn`}>
                 {/* <WordRotate
                   words={["Right", "Fast", "Clear", "Collaborative"]}
@@ -65,8 +65,8 @@ export default function HeroSection() {
                 /> */}
 
                 <RotatingText
-                  texts={["Fast", "Clear", "Right", "Collaborative"]}
-                  mainClassName="px-2 sm:px-2 md:px-3 bg-primary-btn text-white overflow-hidden py-0.5  justify-center rounded-lg"
+                  texts={["Easy", "Secure", "Simple", "Reliable"]}
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-primary-btn text-white overflow-hidden py-0.5  justify-center rounded-lg "
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -83,9 +83,8 @@ export default function HeroSection() {
           <p
             className={`${inter.className} text-muted-foreground/80 font-normal w-3/4`}
           >
-            Boost your productivity with docsmin. Create professional looking
-            documentation website in minutes. Create and manage all through one
-            platform
+            VidStash lets you upload, preview, and share videos securely — with
+            real-time status, link controls, and effortless access.
           </p>
         </motion.div>
 
@@ -102,7 +101,7 @@ export default function HeroSection() {
         >
           <Button className="p-6 rounded-[15px] border-4 border-[#2F2F30] bg-secondary-btn hover:bg-secondary-btn cursor-pointer group duration-500 inset-shadow-sm inset-shadow-white/50">
             <p className={`${inter.className} font-bold text-lg text-white`}>
-              Get Started for Free
+              Upload your first reel
             </p>
 
             <LuCircleArrowRight

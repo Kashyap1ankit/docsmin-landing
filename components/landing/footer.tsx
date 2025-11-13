@@ -52,10 +52,11 @@ export default function Footer() {
 
       <div className="grid w-full gap-8 xl:grid-cols-3 xl:gap-8">
         <AnimatedContainer className="space-y-4 ">
-          <img
-            src={"/docsmin.png"}
-            className="size-24 h-12 object-cover text-white invert"
-          />
+          <p
+            className={`${inter.className} font-bold text-xl text-primary-foreground`}
+          >
+            Vidstash
+          </p>
           <p
             className={`${anonymouse.className} text-muted-foreground mt-8 text-sm md:mt-0`}
           >

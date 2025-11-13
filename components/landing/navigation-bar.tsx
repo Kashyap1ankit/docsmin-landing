@@ -52,15 +52,23 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationBar() {
   return (
-    <div className="bg-primary-bg/30 flex flex-row justify-between items-center rounded-[20px] px-4 mx-auto ">
+    <div className="bg-primary-bg/30 flex flex-row justify-between items-center rounded-[20px] px-4 mx-auto py-2">
       {/* Logo */}
-      <Image
-        src={"/docsmin.png"}
-        width={500}
-        height={500}
-        alt="logo"
-        className="w-24 h-18 object-cover invert-100"
-      />
+      <div className="flex flex-row justify-between items-center">
+        <Image
+          src={"/docsmin.png"}
+          width={5000}
+          height={5000}
+          alt="logo"
+          className="w-12 object-cover invert-100"
+        />
+
+        <p
+          className={`${inter.className} font-bold text-lg text-primary-foreground`}
+        >
+          Vidstash
+        </p>
+      </div>
 
       {/* Navigation Menu */}
       <NavigationMenu>
