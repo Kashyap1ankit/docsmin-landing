@@ -4,6 +4,7 @@ import type { ComponentProps, ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { BsTwitter } from "react-icons/bs";
 import { anonymouse, bricolag, inter } from "@/lib/font";
+import { IconType } from "react-icons/lib";
 
 const footerLinks = [
   {
@@ -74,17 +75,23 @@ export default function Footer() {
                   {section.label}
                 </h3>
                 <ul className="text-muted-foreground/80 mt-4 space-y-4 text-sm">
-                  {section.links.map((link: any) => (
-                    <li key={link.title}>
-                      <a
-                        href={link.href}
-                        className={`${inter.className} font-light inline-flex items-center transition-all duration-300`}
-                      >
-                        {link.icon && <link.icon className="me-1 size-4" />}
-                        {link.title}
-                      </a>
-                    </li>
-                  ))}
+                  {section.links.map(
+                    (link: {
+                      title: string;
+                      href: string;
+                      icon?: IconType;
+                    }) => (
+                      <li key={link.title}>
+                        <a
+                          href={link.href}
+                          className={`${inter.className} font-light inline-flex items-center transition-all duration-300`}
+                        >
+                          {link.icon && <link.icon className="me-1 size-4" />}
+                          {link.title}
+                        </a>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </AnimatedContainer>
